@@ -35,7 +35,7 @@ And it will ask you to fill out some information about you or sign in. After tha
 
 
 4.Download the VirtualBox
-![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png=100x)
+![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png =100x100)
 
 [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 select OS X hosts for mac user.
@@ -43,7 +43,7 @@ select OS X hosts for mac user.
 ![alt text](https://user-images.githubusercontent.com/33737176/34188396-1dc92544-e504-11e7-9beb-f19934f90ca0.png)
 
 5.Then slecte "File" --> "import Application" to import "cloudera-quickstart-vm-5.12.0-0-virtualbox.ovf" 
-![alt text](https://user-images.githubusercontent.com/33737176/34188493-b317f0b2-e504-11e7-8d57-b309ff989f02.png=350x252)
+![alt text](https://user-images.githubusercontent.com/33737176/34188493-b317f0b2-e504-11e7-8d57-b309ff989f02.png =350x252)
 
 
 
