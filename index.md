@@ -63,6 +63,7 @@ This is the VirtualBox interface looklike:
 
 
 5.Then slecte "File" --> "import Application" to import "cloudera-quickstart-vm-5.12.0-0-virtualbox.ovf" 
+![alt text](https://user-images.githubusercontent.com/33737176/34188005-21e31c90-e502-11e7-970f-9a64ca8e5642.png)
 ![alt text](https://user-images.githubusercontent.com/33737176/34227725-286dfed2-e59c-11e7-9885-89fc6a01169f.png)
 
 
