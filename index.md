@@ -17,8 +17,6 @@ MapReduce – a parallel processing software framework. It is comprised of two s
 
 
 
-
-
 #### Set up with Hadoop
 
 1.Download the platform Virtual Box from Cloudera VMs:
@@ -64,11 +62,83 @@ This data source is use to predict whether the cancer is benign or malignant
 
 ### Build Prediction Model in R 
 
+##### Load Data:
+```
+require(caret)
+require(mlbench)
+
+# load the data
+cancerData <- read.csv("data.csv", sep = ",", header = T)
 
 ```
 
 
+##### Feature selection:
 ```
+set.seed(123)
+
+# calculate correlation matrix
+correlationMatrix <- cor(cancerData[,3:32])
+
+# find attributes that are highly corrected (ideally >0.75)
+highlyCorrelated <- findCorrelation(correlationMatrix, cutoff=0.5)
+
+# print indexes of highly correlated attributes
+print(highlyCorrelated)
+
+# define the control using a random forest selection function
+control <- rfeControl(functions=rfFuncs, method="cv", number=10)
+
+# run the RFE algorithm
+results <- rfe(cancerData[,3:32], cancerData[,2], sizes=c(3:32), rfeControl=control)
+
+# summarize the results
+print(results)
+
+```
+
+##### The list of chosen features and Plot of features by accuracy
+
+```
+predictors(results)
+plot(results, type=c("g", "o"))
+
+```
+
+#### Subsetting the data using the selected features
+```
+features <- predictors(results)
+newdata <- cancerData[, features]
+newdata$diagnosis <- cancerData$diagnosis
+
+```
+
+#### Partition the data into training and testing being 70% and 30% resoectively.
+```
+inTrain <- createDataPartition(y = newdata$diagnosis ,
+                               p=0.7, list=FALSE)
+training <- newdata[inTrain,]
+testing <- newdata[-inTrain,]
+dim(training)
+
+```
+
+#### Generalized Linear Model
+``` 
+set.seed(323)
+modelFit1 <- train(diagnosis ~.,data=training, preProcess = c("center", "scale"), method="glm")
+pred1 <- predict(modelFit1,newdata=testing)
+confusionMatrix(pred1,testing$diagnosis)
+```
+
+
+
+
+
+
+
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
