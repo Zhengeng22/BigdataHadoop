@@ -2,10 +2,18 @@
 
 ### What is Hadoop?
 
-Hadoop is an open source, Java-based programming framework that supports the processing and storage of extremely large datasets in a distributed computing environment. It is part of the Apache project sponsored by the Apache Software Foundation.
+Hadoop is an open source, Java-based programming framework that supports the processing and storage of extremely large datasets in a distributed computing environment. It is part of the Apache project sponsored by the Apache Software Foundation.  
 
 
-![alt text](https://www.sas.com/content/sascom/en_us/insights/big-data/hadoop/_jcr_content/par/styledcontainer_8bf1/par/image_8ed0.img.png/1499696730997.png)
+![alt text](https://www.sas.com/content/sascom/en_us/insights/big-data/hadoop/_jcr_content/par/styledcontainer_8bf1/par/image_8ed0.img.png/1499696730997.png)  
+
+* Ability to store and process huge amounts of any kind of data, quickly.  
+* Computing power.   
+* Fault tolerance.  
+* Flexibility  
+* Low cost.  
+* Scalability.
+
 
 ### what is MapReduce
 
