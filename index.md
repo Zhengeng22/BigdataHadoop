@@ -13,6 +13,16 @@ MapReduce – a parallel processing software framework. It is comprised of two s
 
 ![alt text](https://user-images.githubusercontent.com/33737176/34189340-f10b2958-e508-11e7-92c4-d994a5439dab.png)
 
+<center>Hadoop Distributed File System (HDFS)</center> 
+
+The Hadoop Distributed File System (HDFS) is a distributed file system designed to run on commodity hardware. 
+HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware. HDFS provides high throughput access to application data and is suitable for applications that have large data sets. It relaxes a few POSIX requirements to enable streaming access to file system data.
+
+![alt text](https://user-images.githubusercontent.com/33737176/34227870-b2cee500-e59c-11e7-8514-6b240d9c5ce6.png)
+                                          
+
+
+
 
 
 ### Set up with Hadoop
