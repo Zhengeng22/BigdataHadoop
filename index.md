@@ -20,29 +20,29 @@ Hadoop is an open source, Java-based programming framework that supports the pro
 
 #### Set up with Hadoop
 
-1. Download the platform Virtual Box from Cloudera VMs:
+1.Download the platform Virtual Box from Cloudera VMs:
 
 link:[Cloudera downloads](https://www.cloudera.com/downloads/quickstart_vms/5-12.html)
 
-2. Select “Virtual Box” and then click on “get it now”.
+2.Select “Virtual Box” and then click on “get it now”.
 And it will ask you to fill out some information about you or sign in. After that, agree with the contract. And it will start downloading the Virtual Box.
 
 ![alt text](https://user-images.githubusercontent.com/33737176/34186822-fd5cfdd8-e4fb-11e7-8285-2bf4bc1f2b80.png)
 
-3. Unzip the file, you will see two file under the folder
+3.Unzip the file, you will see two file under the folder
 
 ![alt text](https://user-images.githubusercontent.com/33737176/34188005-21e31c90-e502-11e7-970f-9a64ca8e5642.png)
 
 
-4. Download the VirtualBox
-![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png)
+4.Download the VirtualBox
+![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png =100x)
 
 [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 select OS X hosts for mac user.
 
 ![alt text](https://user-images.githubusercontent.com/33737176/34188396-1dc92544-e504-11e7-9beb-f19934f90ca0.png)
 
-5. Then slecte "File" --> "import Application" to import "cloudera-quickstart-vm-5.12.0-0-virtualbox.ovf" 
+5.Then slecte "File" --> "import Application" to import "cloudera-quickstart-vm-5.12.0-0-virtualbox.ovf" 
 ![alt text](https://user-images.githubusercontent.com/33737176/34188493-b317f0b2-e504-11e7-8d57-b309ff989f02.png)
 ![alt text](https://user-images.githubusercontent.com/33737176/34188494-b8a69a88-e504-11e7-9ce4-33287fa3a80f.png)
 
