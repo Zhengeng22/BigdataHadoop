@@ -1,9 +1,13 @@
 ## Hadoop for Big data
 
-###set up with Hadoop
+#set up with Hadoop
 
 Download the platform Virtual Box from Cloudera VMs:
-link: https://www.cloudera.com/downloads/quickstart_vms/5-12.html
+
+link:[GitHub](https://www.cloudera.com/downloads/quickstart_vms/5-12.html)
+
+
+
 ![alt text](https://user-images.githubusercontent.com/33737176/34186822-fd5cfdd8-e4fb-11e7-8285-2bf4bc1f2b80.png)
 
 ### Markdown
