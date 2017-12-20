@@ -1,10 +1,10 @@
-## Welcome to GitHub Pages
 ## Hadoop for Big data
 
-Set up with Hadoop
+###set up with Hadoop
 
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Download the platform Virtual Box from Cloudera VMs:
+link: https://www.cloudera.com/downloads/quickstart_vms/5-12.html
+![alt text](https://user-images.githubusercontent.com/33737176/34186822-fd5cfdd8-e4fb-11e7-8285-2bf4bc1f2b80.png)
 
 ### Markdown
 
