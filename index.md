@@ -1,6 +1,6 @@
 ## Hadoop for Big data
 
-### What is Hadoop?
+### **What is Hadoop?**
 
 Hadoop is an open source, Java-based programming framework that supports the processing and storage of extremely large datasets in a distributed computing environment. It is part of the Apache project sponsored by the Apache Software Foundation.  
 
@@ -15,7 +15,7 @@ Hadoop is an open source, Java-based programming framework that supports the pro
 * Scalability.
 
 
-### What is MapReduce
+### **What is MapReduce**
 
 MapReduce – a parallel processing software framework. It is comprised of two steps. Map step is a master node that takes inputs and partitions them into smaller subproblems and then distributes them to worker nodes. After the map step has taken place, the master node takes the answers to all of the subproblems and combines them to produce output
 
@@ -33,7 +33,7 @@ HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardwar
 
 
 
-### Set up with Hadoop
+### **Set up with Hadoop**
 
 1.Download the platform Virtual Box from Cloudera VMs:
 
@@ -68,7 +68,7 @@ This is the VirtualBox interface looklike:
 
 
 
-### How to Install RStudio Server on CentOS
+### **How to Install RStudio Server on CentOS**
 (RStudio Server is the web edition of RStudio which is a series of tools designed to facilitate the coding job using the R programming language.)
 
 ##### Step 1: Update the system
@@ -104,7 +104,7 @@ sudo firewall-cmd --reload
 
 
 
-### Project abstract  
+### **Project abstract**  
 
 Data source:
 [Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/data)
@@ -112,7 +112,7 @@ This data source is use to predict whether the cancer is benign or malignant
 
 
 
-### Build Prediction Model in R 
+### **Build Prediction Model in R** 
 
 ##### Load Data:
 ```
@@ -184,11 +184,13 @@ confusionMatrix(pred1,testing$diagnosis)
 
 
 
+### MapReduce in R
+```
 
 
 
 
-
+```
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
