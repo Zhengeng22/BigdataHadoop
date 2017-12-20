@@ -52,7 +52,7 @@ This is the VirtualBox interface looklike:
 ### How to Install RStudio Server on CentOS
 (RStudio Server is the web edition of RStudio which is a series of tools designed to facilitate the coding job using the R programming language.)
 
-#### Step 1: Update the system
+##### Step 1: Update the system
 Log in as a sudo user, and then execute the below commands:
 ```
 sudo yum install epel-release
@@ -60,12 +60,12 @@ sudo yum update
 sudo shutdown -r now
 ```
 
-#### Step 2: Install R
+##### Step 2: Install R
 ```
 sudo yum install R -y
 ```
 
-#### Step 3: Install RStudio Server
+##### Step 3: Install RStudio Server
 Install the latest stable release of RStudio Server. 
 ```
 cd
@@ -74,7 +74,7 @@ sudo yum install --nogpgcheck rstudio-server-rhel-1.0.136-x86_64.rpm -y
 ```
 Note: find the latest release of RStudio Server from this webset: [official download page](https://www.rstudio.com/products/rstudio/download-server/)
 
-#### Step 4: Access RStudio Server from a web browser
+##### Step 4: Access RStudio Server from a web browser
 ```
 sudo firewall-cmd --permanent --zone=public --add-port=8787/tcp
 sudo firewall-cmd --reload
