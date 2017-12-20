@@ -13,7 +13,6 @@ MapReduce – a parallel processing software framework. It is comprised of two s
 
 ![alt text](https://user-images.githubusercontent.com/33737176/34189340-f10b2958-e508-11e7-92c4-d994a5439dab.png)
 
-*Hadoop Distributed File System (HDFS) 
 
 
 ### Set up with Hadoop
