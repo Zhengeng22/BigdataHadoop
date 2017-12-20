@@ -42,6 +42,12 @@ select OS X hosts for mac user.
 
 ![alt text](https://user-images.githubusercontent.com/33737176/34188396-1dc92544-e504-11e7-9beb-f19934f90ca0.png)
 
+
+This is the VirtualBox interface looklike:
+![alt text](https://user-images.githubusercontent.com/33737176/34189588-33025a7e-e50a-11e7-99df-e806e611fc14.png)
+
+
+
 5.Then slecte "File" --> "import Application" to import "cloudera-quickstart-vm-5.12.0-0-virtualbox.ovf" 
 ![alt text](https://user-images.githubusercontent.com/33737176/34188493-b317f0b2-e504-11e7-8d57-b309ff989f02.png)
 
@@ -56,11 +62,11 @@ This data source is use to predict whether the cancer is benign or malignant
 
 
 
-### Model comparison
-
+### Build Prediction Model in R 
 
 
 ```
+
 
 ```
 
