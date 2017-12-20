@@ -15,9 +15,7 @@ MapReduce – a parallel processing software framework. It is comprised of two s
 
 
 
-
-
-#### Set up with Hadoop
+### Set up with Hadoop
 
 1.Download the platform Virtual Box from Cloudera VMs:
 
@@ -48,6 +46,58 @@ This is the VirtualBox interface looklike:
 
 5.Then slecte "File" --> "import Application" to import "cloudera-quickstart-vm-5.12.0-0-virtualbox.ovf" 
 ![alt text](https://user-images.githubusercontent.com/33737176/34188493-b317f0b2-e504-11e7-8d57-b309ff989f02.png)
+
+
+
+### How to Install RStudio Server on CentOS
+(RStudio Server is the web edition of RStudio which is a series of tools designed to facilitate the coding job using the R programming language.)
+
+#### Step 1: Update the system
+Log in as a sudo user, and then execute the below commands:
+```
+sudo yum install epel-release
+sudo yum update
+sudo shutdown -r now
+```
+
+#### Step 2: Install R
+```
+sudo yum install R -y
+```
+
+#### Step 3: Install RStudio Server
+Install the latest stable release of RStudio Server. 
+```
+cd
+wget https://download2.rstudio.org/rstudio-server-rhel-1.0.136-x86_64.rpm
+sudo yum install --nogpgcheck rstudio-server-rhel-1.0.136-x86_64.rpm -y
+```
+Note: find the latest release of RStudio Server from this webset: [official download page](https://www.rstudio.com/products/rstudio/download-server/)
+
+#### Step 4: Access RStudio Server from a web browser
+```
+sudo firewall-cmd --permanent --zone=public --add-port=8787/tcp
+sudo firewall-cmd --reload
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,7 +148,6 @@ print(results)
 ```
 
 ##### The list of chosen features and Plot of features by accuracy
-
 ```
 predictors(results)
 plot(results, type=c("g", "o"))
