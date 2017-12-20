@@ -35,7 +35,7 @@ And it will ask you to fill out some information about you or sign in. After tha
 
 
 4.Download the VirtualBox
-![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png =100x100)
+![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png|width=100)
 
 [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 select OS X hosts for mac user.
