@@ -105,7 +105,7 @@ plot(results, type=c("g", "o"))
 
 ```
 
-#### Subsetting the data using the selected features
+##### Subsetting the data using the selected features
 ```
 features <- predictors(results)
 newdata <- cancerData[, features]
@@ -113,7 +113,7 @@ newdata$diagnosis <- cancerData$diagnosis
 
 ```
 
-#### Partition the data into training and testing being 70% and 30% resoectively.
+##### Partition the data into training and testing being 70% and 30% resoectively.
 ```
 inTrain <- createDataPartition(y = newdata$diagnosis ,
                                p=0.7, list=FALSE)
@@ -123,7 +123,7 @@ dim(training)
 
 ```
 
-#### Generalized Linear Model
+##### Generalized Linear Model
 ``` 
 set.seed(323)
 modelFit1 <- train(diagnosis ~.,data=training, preProcess = c("center", "scale"), method="glm")
