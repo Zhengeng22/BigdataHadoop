@@ -15,7 +15,7 @@ Hadoop is an open source, Java-based programming framework that supports the pro
 * Scalability.
 
 
-### what is MapReduce
+### What is MapReduce
 
 MapReduce – a parallel processing software framework. It is comprised of two steps. Map step is a master node that takes inputs and partitions them into smaller subproblems and then distributes them to worker nodes. After the map step has taken place, the master node takes the answers to all of the subproblems and combines them to produce output
 
@@ -97,23 +97,6 @@ Note: find the latest release of RStudio Server from this webset: [official down
 sudo firewall-cmd --permanent --zone=public --add-port=8787/tcp
 sudo firewall-cmd --reload
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
