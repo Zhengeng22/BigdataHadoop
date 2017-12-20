@@ -7,10 +7,11 @@ Hadoop is an open source, Java-based programming framework that supports the pro
 
 ![alt text](https://www.sas.com/content/sascom/en_us/insights/big-data/hadoop/_jcr_content/par/styledcontainer_8bf1/par/image_8ed0.img.png/1499696730997.png)
 
+### what is MapReduce
 
+MapReduce – a parallel processing software framework. It is comprised of two steps. Map step is a master node that takes inputs and partitions them into smaller subproblems and then distributes them to worker nodes. After the map step has taken place, the master node takes the answers to all of the subproblems and combines them to produce output
 
-
-
+![alt text](https://user-images.githubusercontent.com/33737176/34189340-f10b2958-e508-11e7-92c4-d994a5439dab.png)
 
 
 
@@ -35,7 +36,6 @@ And it will ask you to fill out some information about you or sign in. After tha
 
 
 4.Download the VirtualBox
-![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png|width=100)
 
 [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 select OS X hosts for mac user.
@@ -43,21 +43,26 @@ select OS X hosts for mac user.
 ![alt text](https://user-images.githubusercontent.com/33737176/34188396-1dc92544-e504-11e7-9beb-f19934f90ca0.png)
 
 5.Then slecte "File" --> "import Application" to import "cloudera-quickstart-vm-5.12.0-0-virtualbox.ovf" 
-![alt text](https://user-images.githubusercontent.com/33737176/34188493-b317f0b2-e504-11e7-8d57-b309ff989f02.png =350x252)
+![alt text](https://user-images.githubusercontent.com/33737176/34188493-b317f0b2-e504-11e7-8d57-b309ff989f02.png)
 
 
 
 
+### Project abstract  
+
+Data source:
+[Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/data)
+This data source is use to predict whether the cancer is benign or malignant
 
 
 
+### Model comparison
 
 
 
+```
 
-### Markdown 
-
-
+```
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -83,8 +88,12 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 
 ### Jekyll Themes
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Zhengeng22/BigdataHadoop/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+```
+
+
 
 ### Support or Contact
 
