@@ -1,16 +1,42 @@
 ## Hadoop for Big data
 
-#set up with Hadoop
+### What is Hadoop?
+
+Hadoop is an open source, Java-based programming framework that supports the processing and storage of extremely large datasets in a distributed computing environment. It is part of the Apache project sponsored by the Apache Software Foundation.
+
+
+![alt text](https://www.sas.com/content/sascom/en_us/insights/big-data/hadoop/_jcr_content/par/styledcontainer_8bf1/par/image_8ed0.img.png/1499696730997.png)
+
+
+
+
+
+
+
+
+
+
+
+
+#### Set up with Hadoop
+
+
 
 Download the platform Virtual Box from Cloudera VMs:
 
-link:[GitHub](https://www.cloudera.com/downloads/quickstart_vms/5-12.html)
-
-
+link:[Cloudera downloads](https://www.cloudera.com/downloads/quickstart_vms/5-12.html)
 
 ![alt text](https://user-images.githubusercontent.com/33737176/34186822-fd5cfdd8-e4fb-11e7-8285-2bf4bc1f2b80.png)
 
-### Markdown
+Select “Virtual Box” and then click on “get it now”.
+And it will ask you to fill out some information about you or sign in. After that, agree with the contract. And it will start downloading the Virtual Box.
+
+![alt text](https://user-images.githubusercontent.com/33737176/34187271-88b7cca8-e4fe-11e7-91d9-b49b86555473.png)
+
+
+### Markdown 
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -33,6 +59,7 @@ Syntax highlighted code block
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
 
 ### Jekyll Themes
 
