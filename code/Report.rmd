@@ -1,0 +1,143 @@
+---
+title: "Breast Cancer Classification in R"
+author: "Emi Harry"
+date: "11/20/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F, cache = T)
+```
+
+## R Markdown
+
+The data file can be found here https://www.kaggle.com/uciml/breast-cancer-wisconsin-data
+
+```{r data}
+require(caret)
+require(mlbench)
+
+# load the data
+cancerData <- read.csv("data.csv", sep = ",", header = T)
+```
+
+## Feature Selection
+
+```{r features}
+
+set.seed(123)
+
+# calculate correlation matrix
+correlationMatrix <- cor(cancerData[,3:32])
+
+# find attributes that are highly corrected (ideally >0.75)
+highlyCorrelated <- findCorrelation(correlationMatrix, cutoff=0.5)
+
+# print indexes of highly correlated attributes
+print(highlyCorrelated)
+
+# define the control using a random forest selection function
+control <- rfeControl(functions=rfFuncs, method="cv", number=10)
+
+# run the RFE algorithm
+results <- rfe(cancerData[,3:32], cancerData[,2], sizes=c(3:32), rfeControl=control)
+
+# summarize the results
+print(results)
+```
+
+The list of chosen features
+
+```{r chosen}
+predictors(results)
+```
+
+Plot of features by accuracy
+
+```{r plot, echo=FALSE}
+plot(results, type=c("g", "o"))
+```
+
+Subsetting the data using the selected features
+
+```{r subsetting}
+features <- predictors(results)
+newdata <- cancerData[, features]
+newdata$diagnosis <- cancerData$diagnosis
+```
+
+Partition the data into training and testing being 70% and 30% resoectively.
+
+```{r partitioning}
+
+inTrain <- createDataPartition(y = newdata$diagnosis ,
+                               p=0.7, list=FALSE)
+training <- newdata[inTrain,]
+testing <- newdata[-inTrain,]
+dim(training)
+```
+
+# Build Prediction Model
+
+Run the training and prediction using 3 different models.
+
+## Generalized Linear Model
+
+```{r GLM, echo = T, include= FALSE}
+set.seed(323)
+modelFit1 <- train(diagnosis ~.,data=training, preProcess = c("center", "scale"), method="glm")
+pred1 <- predict(modelFit1,newdata=testing)
+```
+
+View the performance of the gl model
+
+```{r eval1}
+confusionMatrix(pred1,testing$diagnosis)
+```
+
+## Random Forest
+
+```{r RF, echo = T, include= FALSE}
+set.seed(765)
+modelFit2 <- train(diagnosis ~.,data=training, preProcess = c("center", "scale"), method="rf")
+pred2 <- predict(modelFit2,newdata=testing)
+```
+
+View the performance of the rf model
+
+```{r eval2}
+confusionMatrix(pred2,testing$diagnosis)
+```
+
+## Neural Network Model
+
+```{r NNET, echo = T, include= FALSE}
+set.seed(234)
+modelFit3 <- train(diagnosis ~.,data=training, preProcess = c("center", "scale"), method="nnet")
+pred3 <- predict(modelFit3,newdata=testing)
+```
+
+View the performance of the rf model
+
+```{r eval3}
+confusionMatrix(pred3,testing$diagnosis)
+```
+
+## Model Ensemble
+
+The predictors will be combined and another model will be fit using the generalized linear model.
+
+```{r Ensemble, echo = T, include=FALSE}
+set.seed(436)
+predDF <- data.frame(pred1,pred2,pred3, diagnosis=testing$diagnosis)
+combModFit <- train(diagnosis ~.,method="nnet",data=predDF)
+combPred <- predict(combModFit,predDF)
+```
+
+View the performance of the ensemble model.
+
+```{r eval4}
+confusionMatrix(combPred,testing$diagnosis)
+```
+
+Comparing the performance, there is no significant difference between the ensemble model and the standalon neural networl model. 
