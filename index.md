@@ -184,15 +184,14 @@ confusionMatrix(pred1,testing$diagnosis)
 
 
 
-### MapReduce Simulation
+### **MapReduce Simulation**
+Run MapReduce Locally.
+```
+ $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.0.jar grep input output 'dfs[a-z.]+'
+
 ```
 
-
-
-
-```
-
-### Web Application
+### **Web Application**
 
 
 
